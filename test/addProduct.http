@@ -1,0 +1,18 @@
+# makes put request, with url `/addProduct`
+POST https://yynfs7-3000.csb.app/add_product
+
+# define headers in .dothttp.json with env
+// basicauth("{{username}}, "{{password}}")
+
+# posts with urlencoded
+json({
+    "product_name": "Ball",
+    "category": "game",
+    "price": 10.01,
+    "stock_quantity": 5,
+    "manufacturer": "ABC",
+    "weight": 0.21,
+    "dimensions": "r25",
+    "color": "white",
+    "description": "leather ball for football"
+  })
